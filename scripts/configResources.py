@@ -427,7 +427,7 @@ else:
 	cmo.createWLDFSystemResource('MedRecWLDF')
 	cd('/WLDFSystemResources/MedRecWLDF')
 	cmo.setDescription('')
-	set('Targets',jarray.array([ObjectName('com.bea:Name=Cluster-1,Type=Cluster')], ObjectName))
+	set('Targets',jarray.array([ObjectName('com.bea:Name='+clusterName+',Type=Cluster')], ObjectName))
 	cd('/WLDFSystemResources/MedRecWLDF/WLDFResource/MedRecWLDF/Harvester/MedRecWLDF')
 	cmo.createHarvestedType('com.oracle.medrec.admin.AdminReport')
 	cd('/WLDFSystemResources/MedRecWLDF/WLDFResource/MedRecWLDF/Harvester/MedRecWLDF/HarvestedTypes/com.oracle.medrec.admin.AdminReport')
